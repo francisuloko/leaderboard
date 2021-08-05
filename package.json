@@ -4,9 +4,10 @@
   "description": "The leaderboard project to build a website to displays scores submitted by different players. It also allows users to submit their score. All data  submitted will be preserved in the external Leaderboard API service.",
   "private": "true",
   "scripts": {
-    "test": "jest",
-    "build": "webpack",
-    "start": "webpack serve --open"
+    "test": "jest --env=jsdom",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   },
   "homepage": "https://github.com/francisuloko/leaderboard#readme",
   "devDependencies": {
+    "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"

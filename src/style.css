@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.flex-util {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 10px 20px;
+}
+
+.leaderboard-container {
+  margin: 10px auto;
+  width: 800px;
+  align-items: flex-start;
+}
+
+.leaderboard-scores {
+  width: 500px;
+  margin: 0 40px 0 0;
+}
+
+.leaderboard-header {
+  margin-bottom: 10px;
+}
+
+.refresh-button {
+  padding: 10px;
+}
+
+.leaderboard-records {
+  padding: 0;
+  border: 2px solid #555;
+}
+
+.record {
+  padding: 10px;
+}
+
+.record:nth-child(even) {
+  background-color: #ddd;
+}
+
+.new-entries {
+  width: 300px;
+}
+
+.username,
+.user-score {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid #333;
+}
+
+.refresh-button,
+.submit-button {
+  padding: 5px 20px;
+  float: right;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #ddd;
+  width: 100%;
+  padding: 20px;
+}
