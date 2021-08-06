@@ -1,19 +1,19 @@
-const createRecord = () => {
+const createRecord = (scores) => {
   const ul = document.getElementById('leaderboard-records');
-  let counter = 1;
   ul.innerHTML = '';
-  for (let i = 0; i < 5; i += 1) {
+  const sortList = scores.result;
+  sortList.sort((a, b) => b.score - a.score);
+  sortList.forEach((game) => {
     const li = document.createElement('li');
     const name = document.createElement('span');
     const score = document.createElement('span');
     li.classList.add('record');
-    name.innerHTML = 'Name: ';
-    score.innerHTML = 100 + counter;
+    name.innerHTML = `${game.user} `;
+    score.innerHTML = game.score;
     li.appendChild(name);
     li.appendChild(score);
     ul.appendChild(li);
-    counter += 1;
-  }
+  });
 };
 
 export default createRecord;
