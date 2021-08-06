@@ -7,7 +7,7 @@ const createRecord = (scores) => {
     const li = document.createElement('li');
     const name = document.createElement('span');
     const score = document.createElement('span');
-    li.classList.add('record');
+    li.classList.add('list-group-item');
     name.innerHTML = `${game.user} `;
     score.innerHTML = game.score;
     li.appendChild(name);
