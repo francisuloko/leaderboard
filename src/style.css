@@ -6,70 +6,23 @@
   text-decoration: none;
 }
 
-body {
-  background-color: #fff;
-}
-
-.flex-util {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header {
+header {
   padding: 10px 20px;
+  background-color: crimson;
+  color: #fff;
 }
 
 .leaderboard-container {
-  margin: 10px auto;
-  width: 800px;
-  align-items: flex-start;
+  margin: 40px auto;
 }
 
-.leaderboard-scores {
-  width: 500px;
-  margin: 0 40px 0 0;
-}
-
-.leaderboard-header {
-  margin-bottom: 10px;
-}
-
-.refresh-button {
-  padding: 10px;
-}
-
-.leaderboard-records {
-  padding: 0;
-  border: 2px solid #555;
-}
-
-.record {
-  padding: 10px;
-}
-
-.record:nth-child(even) {
-  background-color: #ddd;
-}
-
-.new-entries {
-  width: 300px;
-}
-
-.username,
-.user-score {
-  width: 100%;
-  margin: 10px 0;
-  padding: 5px;
-  outline: 0;
-  border: 1px solid #333;
+.list-group-item:nth-child(even) {
+  background-color: #eee;
 }
 
 .refresh-button,
 .submit-button {
-  padding: 5px 20px;
   float: right;
-  border: 1px solid #333;
 }
 
 .footer {

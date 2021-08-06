@@ -2,7 +2,7 @@ import createRecord from './createRecord.js';
 
 const form = document.getElementById('form');
 const refreshButton = document.getElementById('refresh-button');
-const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zAG1ExHNiELiNGcSYJXT/scores/';
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nrFNDybxaeayVUlyCP41/scores/';
 
 const setScore = async (e) => {
   e.preventDefault();
