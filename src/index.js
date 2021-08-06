@@ -1,4 +1,4 @@
 import './style.css';
-import createRecord from './record.js';
+import getScore from './api.js';
 
-createRecord();
+getScore();
